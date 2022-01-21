@@ -1,0 +1,24 @@
+
+<div class="container-md">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <h3>Add Contact</h3>
+            <form (ngSubmit)="onSumbit()">
+                <div class="form-group">
+                    <label for="contactName">Name:</label>
+                    <input class="form-control" type="text" id="contactName" name="contactName" [(ngModel)]="contact.contactName">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email:</label>
+                    <input class="form-control" type="text" id="contactEmail" name="contactEmail" [(ngModel)]="contact.contactEmail">
+                </div>
+                <div class="form-group">
+                    <label for="contactPhone">Phone:</label>
+                    <input class="form-control" type="text" id="contactPhone" name="contactPhone" [(ngModel)]="contact.contactPhone">
+                </div>
+                <button type="submit" class="btn btn-success" style="margin-top: 10px;">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
